@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C1A93FB1410E9B700C7D74E /* DealerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1A93FA1410E9B700C7D74E /* DealerCell.xib */; };
+		8C1A93FF1410E9F700C7D74E /* DealerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A93FE1410E9F700C7D74E /* DealerCell.m */; };
+		8C21A9231404B8CF00F68F16 /* ModelComplectations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C21A9211404B8CE00F68F16 /* ModelComplectations.m */; };
+		8C21A9241404B8CF00F68F16 /* ModelComplectations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C21A9221404B8CF00F68F16 /* ModelComplectations.xib */; };
+		8CA35F3F1407A1630072AC39 /* CreamTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35F3D1407A1630072AC39 /* CreamTable.m */; };
+		8CA35F401407A1630072AC39 /* CreamTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA35F3E1407A1630072AC39 /* CreamTable.xib */; };
+		8CA35F431407A53D0072AC39 /* creams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA35F421407A53D0072AC39 /* creams.plist */; };
+		8CA63CE314060B19007DCF87 /* greenbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA63CE114060B19007DCF87 /* greenbox.png */; };
+		8CA63CE414060B19007DCF87 /* greenbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA63CE214060B19007DCF87 /* greenbox@2x.png */; };
+		8CAD2AAB1403C69100433B54 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD2AAA1403C69000433B54 /* Model.m */; };
+		8CAD2AAF1403C6F300433B54 /* Complectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD2AAE1403C6F200433B54 /* Complectation.m */; };
+		8CC11A3B1403571D0043CEB4 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC11A3A1403571D0043CEB4 /* libxml2.2.7.3.dylib */; };
+		8CC11A3E140357260043CEB4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC11A3D140357260043CEB4 /* SystemConfiguration.framework */; };
+		8CC11A6A14035E510043CEB4 /* MarkDealers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC11A6814035E500043CEB4 /* MarkDealers.m */; };
+		8CC11A6B14035E510043CEB4 /* MarkDealers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC11A6914035E510043CEB4 /* MarkDealers.xib */; };
+		8CC476A914147DBE00DB626E /* avtofon-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC476A514147DBE00DB626E /* avtofon-green.png */; };
+		8CC476AA14147DBE00DB626E /* avtofon-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC476A614147DBE00DB626E /* avtofon-green@2x.png */; };
+		8CC476AB14147DBE00DB626E /* avtofon-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC476A714147DBE00DB626E /* avtofon-top.png */; };
+		8CC476AC14147DBE00DB626E /* avtofon-top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC476A814147DBE00DB626E /* avtofon-top@2x.png */; };
+		B39631CB143849AD00E70AA7 /* UsedCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39631CA143849AD00E70AA7 /* UsedCellOne.xib */; };
+		B39631CF14384C7800E70AA7 /* UsedCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B39631CE14384C7800E70AA7 /* UsedCellOne.m */; };
+		B39631D114385E0800E70AA7 /* UsedCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39631D014385E0800E70AA7 /* UsedCellTwo.xib */; };
+		B39631D414385F3600E70AA7 /* UsedCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = B39631D314385F3600E70AA7 /* UsedCellTwo.m */; };
+		B39631D8143885F100E70AA7 /* services.plist in Resources */ = {isa = PBXBuildFile; fileRef = B39631D7143885F100E70AA7 /* services.plist */; };
+		B39631DA143885FE00E70AA7 /* ServiceTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39631D9143885FE00E70AA7 /* ServiceTable.xib */; };
+		B39631DD1438860800E70AA7 /* ServiceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B39631DC1438860800E70AA7 /* ServiceTable.m */; };
+		B39631E014388A2C00E70AA7 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = B39631DF14388A2A00E70AA7 /* Service.m */; };
+		B3AA83EC1436B88F002D78AD /* UsedTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA83EB1436B88E002D78AD /* UsedTable.m */; };
+		B3AA83F01436C1D3002D78AD /* UsedTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3AA83EF1436C1D3002D78AD /* UsedTable.xib */; };
+		B3AA83F51436F12F002D78AD /* SvcTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA83F41436F12B002D78AD /* SvcTable.m */; };
+		B3AA83FC14375AF2002D78AD /* SvcTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3AA83FB14375AF1002D78AD /* SvcTable.xib */; };
+		B3AA83FE14375E69002D78AD /* svcs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3AA83FD14375E69002D78AD /* svcs.plist */; };
+		B3AA8400143763DB002D78AD /* useds.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3AA83FF143763DB002D78AD /* useds.plist */; };
+		DD03F89F14057A650037CF54 /* ModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD03F89E14057A650037CF54 /* ModelCell.m */; };
+		DD03F8A214057B080037CF54 /* ModelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD03F8A114057B080037CF54 /* ModelCell.xib */; };
+		DD2263271401CC7300CA6E6C /* DealerTable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2263251401CC7300CA6E6C /* DealerTable.m */; };
+		DD2263281401CC7300CA6E6C /* DealerTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2263261401CC7300CA6E6C /* DealerTable.xib */; };
+		DD22632E1401CD7200CA6E6C /* PriceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD22632C1401CD7200CA6E6C /* PriceTable.m */; };
+		DD22632F1401CD7200CA6E6C /* PriceTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD22632D1401CD7200CA6E6C /* PriceTable.xib */; };
+		DD2263321401CE4F00CA6E6C /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2263311401CE4F00CA6E6C /* XMLParser.m */; };
+		DD2263381401D40100CA6E6C /* dealers.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD2263371401D40100CA6E6C /* dealers.plist */; };
+		DD22633A1401D40D00CA6E6C /* prices.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD2263391401D40D00CA6E6C /* prices.plist */; };
+		DD22633D1401D43700CA6E6C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DD22633C1401D43700CA6E6C /* Common.m */; };
+		DD2263401401D93F00CA6E6C /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = DD22633F1401D93F00CA6E6C /* Mark.m */; };
+		DD4AA8741400077A006141A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4AA8731400077A006141A1 /* UIKit.framework */; };
+		DD4AA8761400077A006141A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4AA8751400077A006141A1 /* Foundation.framework */; };
+		DD4AA8781400077A006141A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4AA8771400077A006141A1 /* CoreGraphics.framework */; };
+		DD4AA87E1400077A006141A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD4AA87C1400077A006141A1 /* InfoPlist.strings */; };
+		DD4AA8801400077A006141A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4AA87F1400077A006141A1 /* main.m */; };
+		DD4AA8841400077A006141A1 /* avtofonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4AA8831400077A006141A1 /* avtofonAppDelegate.m */; };
+		DD4AA8871400077B006141A1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4AA8851400077B006141A1 /* MainWindow.xib */; };
+		DD5BF7D0140CAB290082FE12 /* 64-zap.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CA140CAB290082FE12 /* 64-zap.png */; };
+		DD5BF7D1140CAB290082FE12 /* 64-zap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CB140CAB290082FE12 /* 64-zap@2x.png */; };
+		DD5BF7D2140CAB290082FE12 /* 139-flags.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CC140CAB290082FE12 /* 139-flags.png */; };
+		DD5BF7D3140CAB290082FE12 /* 139-flags@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CD140CAB290082FE12 /* 139-flags@2x.png */; };
+		DD5BF7D4140CAB290082FE12 /* 172-pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CE140CAB290082FE12 /* 172-pricetag.png */; };
+		DD5BF7D5140CAB290082FE12 /* 172-pricetag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CF140CAB290082FE12 /* 172-pricetag@2x.png */; };
+		DD7C957714048B9900CFE4CD /* MarkModels.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C957514048B9900CFE4CD /* MarkModels.m */; };
+		DD7C957814048B9900CFE4CD /* MarkModels.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7C957614048B9900CFE4CD /* MarkModels.xib */; };
+		DDD2EEE1140328870077B459 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE0140328870077B459 /* Reachability.m */; };
+		DDD2EEE5140332E50077B459 /* Dealer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE4140332E50077B459 /* Dealer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C1A93FA1410E9B700C7D74E /* DealerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealerCell.xib; sourceTree = "<group>"; };
+		8C1A93FD1410E9F700C7D74E /* DealerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealerCell.h; sourceTree = "<group>"; };
+		8C1A93FE1410E9F700C7D74E /* DealerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealerCell.m; sourceTree = "<group>"; };
+		8C21A9201404B8CC00F68F16 /* ModelComplectations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelComplectations.h; sourceTree = "<group>"; };
+		8C21A9211404B8CE00F68F16 /* ModelComplectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelComplectations.m; sourceTree = "<group>"; };
+		8C21A9221404B8CF00F68F16 /* ModelComplectations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelComplectations.xib; sourceTree = "<group>"; };
+		8CA35F3C1407A1630072AC39 /* CreamTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreamTable.h; sourceTree = "<group>"; };
+		8CA35F3D1407A1630072AC39 /* CreamTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreamTable.m; sourceTree = "<group>"; };
+		8CA35F3E1407A1630072AC39 /* CreamTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreamTable.xib; sourceTree = "<group>"; };
+		8CA35F421407A53D0072AC39 /* creams.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = creams.plist; sourceTree = "<group>"; };
+		8CA63CE114060B19007DCF87 /* greenbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbox.png; sourceTree = "<group>"; };
+		8CA63CE214060B19007DCF87 /* greenbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenbox@2x.png"; sourceTree = "<group>"; };
+		8CAD2AA91403C69000433B54 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		8CAD2AAA1403C69000433B54 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		8CAD2AAD1403C6F200433B54 /* Complectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complectation.h; sourceTree = "<group>"; };
+		8CAD2AAE1403C6F200433B54 /* Complectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complectation.m; sourceTree = "<group>"; };
+		8CC11A3A1403571D0043CEB4 /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
+		8CC11A3D140357260043CEB4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8CC11A6714035E4F0043CEB4 /* MarkDealers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkDealers.h; sourceTree = "<group>"; };
+		8CC11A6814035E500043CEB4 /* MarkDealers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkDealers.m; sourceTree = "<group>"; };
+		8CC11A6914035E510043CEB4 /* MarkDealers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkDealers.xib; sourceTree = "<group>"; };
+		8CC476A514147DBE00DB626E /* avtofon-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtofon-green.png"; sourceTree = "<group>"; };
+		8CC476A614147DBE00DB626E /* avtofon-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtofon-green@2x.png"; sourceTree = "<group>"; };
+		8CC476A714147DBE00DB626E /* avtofon-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtofon-top.png"; sourceTree = "<group>"; };
+		8CC476A814147DBE00DB626E /* avtofon-top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtofon-top@2x.png"; sourceTree = "<group>"; };
+		B39631CA143849AD00E70AA7 /* UsedCellOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsedCellOne.xib; sourceTree = "<group>"; };
+		B39631CD14384C7800E70AA7 /* UsedCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsedCellOne.h; sourceTree = "<group>"; };
+		B39631CE14384C7800E70AA7 /* UsedCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsedCellOne.m; sourceTree = "<group>"; };
+		B39631D014385E0800E70AA7 /* UsedCellTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsedCellTwo.xib; sourceTree = "<group>"; };
+		B39631D214385F3500E70AA7 /* UsedCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsedCellTwo.h; sourceTree = "<group>"; };
+		B39631D314385F3600E70AA7 /* UsedCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsedCellTwo.m; sourceTree = "<group>"; };
+		B39631D7143885F100E70AA7 /* services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = services.plist; sourceTree = "<group>"; };
+		B39631D9143885FE00E70AA7 /* ServiceTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTable.xib; sourceTree = "<group>"; };
+		B39631DB1438860700E70AA7 /* ServiceTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceTable.h; sourceTree = "<group>"; };
+		B39631DC1438860800E70AA7 /* ServiceTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceTable.m; sourceTree = "<group>"; };
+		B39631DE14388A2A00E70AA7 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		B39631DF14388A2A00E70AA7 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		B3AA83E41436A3DF002D78AD /* avtofon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avtofon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AA83EA1436B88C002D78AD /* UsedTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsedTable.h; sourceTree = "<group>"; };
+		B3AA83EB1436B88E002D78AD /* UsedTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsedTable.m; sourceTree = "<group>"; };
+		B3AA83EF1436C1D3002D78AD /* UsedTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsedTable.xib; sourceTree = "<group>"; };
+		B3AA83F31436F127002D78AD /* SvcTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvcTable.h; sourceTree = "<group>"; };
+		B3AA83F41436F12B002D78AD /* SvcTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvcTable.m; sourceTree = "<group>"; };
+		B3AA83FB14375AF1002D78AD /* SvcTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SvcTable.xib; sourceTree = "<group>"; };
+		B3AA83FD14375E69002D78AD /* svcs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = svcs.plist; sourceTree = "<group>"; };
+		B3AA83FF143763DB002D78AD /* useds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = useds.plist; sourceTree = "<group>"; };
+		DD03F89D14057A650037CF54 /* ModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelCell.h; sourceTree = "<group>"; };
+		DD03F89E14057A650037CF54 /* ModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelCell.m; sourceTree = "<group>"; };
+		DD03F8A114057B080037CF54 /* ModelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelCell.xib; sourceTree = "<group>"; };
+		DD2263241401CC7300CA6E6C /* DealerTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealerTable.h; sourceTree = "<group>"; };
+		DD2263251401CC7300CA6E6C /* DealerTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealerTable.m; sourceTree = "<group>"; };
+		DD2263261401CC7300CA6E6C /* DealerTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealerTable.xib; sourceTree = "<group>"; };
+		DD22632B1401CD7200CA6E6C /* PriceTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceTable.h; sourceTree = "<group>"; };
+		DD22632C1401CD7200CA6E6C /* PriceTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceTable.m; sourceTree = "<group>"; };
+		DD22632D1401CD7200CA6E6C /* PriceTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceTable.xib; sourceTree = "<group>"; };
+		DD2263301401CE4F00CA6E6C /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		DD2263311401CE4F00CA6E6C /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		DD2263371401D40100CA6E6C /* dealers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dealers.plist; sourceTree = "<group>"; };
+		DD2263391401D40D00CA6E6C /* prices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = prices.plist; sourceTree = "<group>"; };
+		DD22633B1401D43600CA6E6C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		DD22633C1401D43700CA6E6C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		DD22633E1401D93E00CA6E6C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		DD22633F1401D93F00CA6E6C /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
+		DD4AA8731400077A006141A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD4AA8751400077A006141A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD4AA8771400077A006141A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD4AA87B1400077A006141A1 /* avtofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "avtofon-Info.plist"; sourceTree = "<group>"; };
+		DD4AA87D1400077A006141A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD4AA87F1400077A006141A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD4AA8811400077A006141A1 /* avtofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "avtofon-Prefix.pch"; sourceTree = "<group>"; };
+		DD4AA8821400077A006141A1 /* avtofonAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avtofonAppDelegate.h; sourceTree = "<group>"; };
+		DD4AA8831400077A006141A1 /* avtofonAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = avtofonAppDelegate.m; sourceTree = "<group>"; };
+		DD4AA8861400077B006141A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DD5BF7CA140CAB290082FE12 /* 64-zap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "64-zap.png"; sourceTree = "<group>"; };
+		DD5BF7CB140CAB290082FE12 /* 64-zap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "64-zap@2x.png"; sourceTree = "<group>"; };
+		DD5BF7CC140CAB290082FE12 /* 139-flags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "139-flags.png"; sourceTree = "<group>"; };
+		DD5BF7CD140CAB290082FE12 /* 139-flags@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "139-flags@2x.png"; sourceTree = "<group>"; };
+		DD5BF7CE140CAB290082FE12 /* 172-pricetag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "172-pricetag.png"; sourceTree = "<group>"; };
+		DD5BF7CF140CAB290082FE12 /* 172-pricetag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "172-pricetag@2x.png"; sourceTree = "<group>"; };
+		DD7C957414048B9900CFE4CD /* MarkModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkModels.h; sourceTree = "<group>"; };
+		DD7C957514048B9900CFE4CD /* MarkModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkModels.m; sourceTree = "<group>"; };
+		DD7C957614048B9900CFE4CD /* MarkModels.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkModels.xib; sourceTree = "<group>"; };
+		DDD2EEDF140328870077B459 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DDD2EEE0140328870077B459 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DDD2EEE3140332E50077B459 /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
+		DDD2EEE4140332E50077B459 /* Dealer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dealer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD4AA86C1400077A006141A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC11A3E140357260043CEB4 /* SystemConfiguration.framework in Frameworks */,
+				8CC11A3B1403571D0043CEB4 /* libxml2.2.7.3.dylib in Frameworks */,
+				DD4AA8741400077A006141A1 /* UIKit.framework in Frameworks */,
+				DD4AA8761400077A006141A1 /* Foundation.framework in Frameworks */,
+				DD4AA8781400077A006141A1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CA63CDF14060B03007DCF87 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8CA63CE114060B19007DCF87 /* greenbox.png */,
+				8CA63CE214060B19007DCF87 /* greenbox@2x.png */,
+				DD5BF7CA140CAB290082FE12 /* 64-zap.png */,
+				DD5BF7CB140CAB290082FE12 /* 64-zap@2x.png */,
+				DD5BF7CC140CAB290082FE12 /* 139-flags.png */,
+				DD5BF7CD140CAB290082FE12 /* 139-flags@2x.png */,
+				DD5BF7CE140CAB290082FE12 /* 172-pricetag.png */,
+				DD5BF7CF140CAB290082FE12 /* 172-pricetag@2x.png */,
+				8CC476A514147DBE00DB626E /* avtofon-green.png */,
+				8CC476A614147DBE00DB626E /* avtofon-green@2x.png */,
+				8CC476A714147DBE00DB626E /* avtofon-top.png */,
+				8CC476A814147DBE00DB626E /* avtofon-top@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DD22632A1401CD3800CA6E6C /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				B39631D9143885FE00E70AA7 /* ServiceTable.xib */,
+				B3AA83FB14375AF1002D78AD /* SvcTable.xib */,
+				B3AA83EF1436C1D3002D78AD /* UsedTable.xib */,
+				DD4AA8851400077B006141A1 /* MainWindow.xib */,
+				8CA35F3E1407A1630072AC39 /* CreamTable.xib */,
+				DD2263261401CC7300CA6E6C /* DealerTable.xib */,
+				DD22632D1401CD7200CA6E6C /* PriceTable.xib */,
+				8CC11A6914035E510043CEB4 /* MarkDealers.xib */,
+				DD7C957614048B9900CFE4CD /* MarkModels.xib */,
+				8C21A9221404B8CF00F68F16 /* ModelComplectations.xib */,
+				DD03F8A114057B080037CF54 /* ModelCell.xib */,
+				8C1A93FA1410E9B700C7D74E /* DealerCell.xib */,
+				B39631CA143849AD00E70AA7 /* UsedCellOne.xib */,
+				B39631D014385E0800E70AA7 /* UsedCellTwo.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		DD2263361401D3D300CA6E6C /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				B39631D7143885F100E70AA7 /* services.plist */,
+				B3AA83FF143763DB002D78AD /* useds.plist */,
+				B3AA83FD14375E69002D78AD /* svcs.plist */,
+				DD2263371401D40100CA6E6C /* dealers.plist */,
+				DD2263391401D40D00CA6E6C /* prices.plist */,
+				8CA35F421407A53D0072AC39 /* creams.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+		DD4AA8641400077A006141A1 = {
+			isa = PBXGroup;
+			children = (
+				DD4AA8791400077A006141A1 /* avtofon */,
+				DD4AA8721400077A006141A1 /* Frameworks */,
+				DD4AA8701400077A006141A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD4AA8701400077A006141A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA83E41436A3DF002D78AD /* avtofon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4AA8721400077A006141A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CC11A3A1403571D0043CEB4 /* libxml2.2.7.3.dylib */,
+				8CC11A3D140357260043CEB4 /* SystemConfiguration.framework */,
+				DD4AA8731400077A006141A1 /* UIKit.framework */,
+				DD4AA8751400077A006141A1 /* Foundation.framework */,
+				DD4AA8771400077A006141A1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD4AA8791400077A006141A1 /* avtofon */ = {
+			isa = PBXGroup;
+			children = (
+				8CA63CDF14060B03007DCF87 /* Images */,
+				DD2263361401D3D300CA6E6C /* Plists */,
+				DD22632A1401CD3800CA6E6C /* Xibs */,
+				DD4AA8821400077A006141A1 /* avtofonAppDelegate.h */,
+				DD4AA8831400077A006141A1 /* avtofonAppDelegate.m */,
+				B39631DE14388A2A00E70AA7 /* Service.h */,
+				B39631DF14388A2A00E70AA7 /* Service.m */,
+				B39631DB1438860700E70AA7 /* ServiceTable.h */,
+				B39631DC1438860800E70AA7 /* ServiceTable.m */,
+				B3AA83F31436F127002D78AD /* SvcTable.h */,
+				B3AA83F41436F12B002D78AD /* SvcTable.m */,
+				DD22633B1401D43600CA6E6C /* Common.h */,
+				DD22633C1401D43700CA6E6C /* Common.m */,
+				B39631CD14384C7800E70AA7 /* UsedCellOne.h */,
+				B39631CE14384C7800E70AA7 /* UsedCellOne.m */,
+				B39631D214385F3500E70AA7 /* UsedCellTwo.h */,
+				B39631D314385F3600E70AA7 /* UsedCellTwo.m */,
+				B3AA83EA1436B88C002D78AD /* UsedTable.h */,
+				B3AA83EB1436B88E002D78AD /* UsedTable.m */,
+				DD2263241401CC7300CA6E6C /* DealerTable.h */,
+				DD2263251401CC7300CA6E6C /* DealerTable.m */,
+				8CA35F3C1407A1630072AC39 /* CreamTable.h */,
+				8CA35F3D1407A1630072AC39 /* CreamTable.m */,
+				8CC11A6714035E4F0043CEB4 /* MarkDealers.h */,
+				8CC11A6814035E500043CEB4 /* MarkDealers.m */,
+				DD22632B1401CD7200CA6E6C /* PriceTable.h */,
+				DD22632C1401CD7200CA6E6C /* PriceTable.m */,
+				DD7C957414048B9900CFE4CD /* MarkModels.h */,
+				DD7C957514048B9900CFE4CD /* MarkModels.m */,
+				8C21A9201404B8CC00F68F16 /* ModelComplectations.h */,
+				8C21A9211404B8CE00F68F16 /* ModelComplectations.m */,
+				8C1A93FD1410E9F700C7D74E /* DealerCell.h */,
+				8C1A93FE1410E9F700C7D74E /* DealerCell.m */,
+				DD03F89D14057A650037CF54 /* ModelCell.h */,
+				DD03F89E14057A650037CF54 /* ModelCell.m */,
+				DD2263301401CE4F00CA6E6C /* XMLParser.h */,
+				DD2263311401CE4F00CA6E6C /* XMLParser.m */,
+				DD22633E1401D93E00CA6E6C /* Mark.h */,
+				DD22633F1401D93F00CA6E6C /* Mark.m */,
+				DDD2EEE3140332E50077B459 /* Dealer.h */,
+				DDD2EEE4140332E50077B459 /* Dealer.m */,
+				8CAD2AA91403C69000433B54 /* Model.h */,
+				8CAD2AAA1403C69000433B54 /* Model.m */,
+				8CAD2AAD1403C6F200433B54 /* Complectation.h */,
+				8CAD2AAE1403C6F200433B54 /* Complectation.m */,
+				DDD2EEDF140328870077B459 /* Reachability.h */,
+				DDD2EEE0140328870077B459 /* Reachability.m */,
+				DD4AA87A1400077A006141A1 /* Supporting Files */,
+			);
+			path = avtofon;
+			sourceTree = "<group>";
+		};
+		DD4AA87A1400077A006141A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD4AA87B1400077A006141A1 /* avtofon-Info.plist */,
+				DD4AA87C1400077A006141A1 /* InfoPlist.strings */,
+				DD4AA87F1400077A006141A1 /* main.m */,
+				DD4AA8811400077A006141A1 /* avtofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD4AA86E1400077A006141A1 /* avtofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4AA8961400077B006141A1 /* Build configuration list for PBXNativeTarget "avtofon" */;
+			buildPhases = (
+				DD4AA86B1400077A006141A1 /* Sources */,
+				DD4AA86C1400077A006141A1 /* Frameworks */,
+				DD4AA86D1400077A006141A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = avtofon;
+			productName = avtofon;
+			productReference = B3AA83E41436A3DF002D78AD /* avtofon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD4AA8661400077A006141A1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DD4AA8691400077A006141A1 /* Build configuration list for PBXProject "avtofon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD4AA8641400077A006141A1;
+			productRefGroup = DD4AA8701400077A006141A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD4AA86E1400077A006141A1 /* avtofon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD4AA86D1400077A006141A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4AA87E1400077A006141A1 /* InfoPlist.strings in Resources */,
+				DD4AA8871400077B006141A1 /* MainWindow.xib in Resources */,
+				DD2263281401CC7300CA6E6C /* DealerTable.xib in Resources */,
+				DD22632F1401CD7200CA6E6C /* PriceTable.xib in Resources */,
+				DD2263381401D40100CA6E6C /* dealers.plist in Resources */,
+				DD22633A1401D40D00CA6E6C /* prices.plist in Resources */,
+				8CC11A6B14035E510043CEB4 /* MarkDealers.xib in Resources */,
+				DD7C957814048B9900CFE4CD /* MarkModels.xib in Resources */,
+				8C21A9241404B8CF00F68F16 /* ModelComplectations.xib in Resources */,
+				DD03F8A214057B080037CF54 /* ModelCell.xib in Resources */,
+				8CA63CE314060B19007DCF87 /* greenbox.png in Resources */,
+				8CA63CE414060B19007DCF87 /* greenbox@2x.png in Resources */,
+				8CA35F401407A1630072AC39 /* CreamTable.xib in Resources */,
+				8CA35F431407A53D0072AC39 /* creams.plist in Resources */,
+				DD5BF7D0140CAB290082FE12 /* 64-zap.png in Resources */,
+				DD5BF7D1140CAB290082FE12 /* 64-zap@2x.png in Resources */,
+				DD5BF7D2140CAB290082FE12 /* 139-flags.png in Resources */,
+				DD5BF7D3140CAB290082FE12 /* 139-flags@2x.png in Resources */,
+				DD5BF7D4140CAB290082FE12 /* 172-pricetag.png in Resources */,
+				DD5BF7D5140CAB290082FE12 /* 172-pricetag@2x.png in Resources */,
+				8C1A93FB1410E9B700C7D74E /* DealerCell.xib in Resources */,
+				8CC476A914147DBE00DB626E /* avtofon-green.png in Resources */,
+				8CC476AA14147DBE00DB626E /* avtofon-green@2x.png in Resources */,
+				8CC476AB14147DBE00DB626E /* avtofon-top.png in Resources */,
+				8CC476AC14147DBE00DB626E /* avtofon-top@2x.png in Resources */,
+				B3AA83F01436C1D3002D78AD /* UsedTable.xib in Resources */,
+				B3AA83FC14375AF2002D78AD /* SvcTable.xib in Resources */,
+				B3AA83FE14375E69002D78AD /* svcs.plist in Resources */,
+				B3AA8400143763DB002D78AD /* useds.plist in Resources */,
+				B39631CB143849AD00E70AA7 /* UsedCellOne.xib in Resources */,
+				B39631D114385E0800E70AA7 /* UsedCellTwo.xib in Resources */,
+				B39631D8143885F100E70AA7 /* services.plist in Resources */,
+				B39631DA143885FE00E70AA7 /* ServiceTable.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4AA86B1400077A006141A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4AA8801400077A006141A1 /* main.m in Sources */,
+				DD4AA8841400077A006141A1 /* avtofonAppDelegate.m in Sources */,
+				DD2263271401CC7300CA6E6C /* DealerTable.m in Sources */,
+				DD22632E1401CD7200CA6E6C /* PriceTable.m in Sources */,
+				DD2263321401CE4F00CA6E6C /* XMLParser.m in Sources */,
+				DD22633D1401D43700CA6E6C /* Common.m in Sources */,
+				DD2263401401D93F00CA6E6C /* Mark.m in Sources */,
+				DDD2EEE1140328870077B459 /* Reachability.m in Sources */,
+				DDD2EEE5140332E50077B459 /* Dealer.m in Sources */,
+				8CC11A6A14035E510043CEB4 /* MarkDealers.m in Sources */,
+				8CAD2AAB1403C69100433B54 /* Model.m in Sources */,
+				8CAD2AAF1403C6F300433B54 /* Complectation.m in Sources */,
+				DD7C957714048B9900CFE4CD /* MarkModels.m in Sources */,
+				8C21A9231404B8CF00F68F16 /* ModelComplectations.m in Sources */,
+				DD03F89F14057A650037CF54 /* ModelCell.m in Sources */,
+				8CA35F3F1407A1630072AC39 /* CreamTable.m in Sources */,
+				8C1A93FF1410E9F700C7D74E /* DealerCell.m in Sources */,
+				B3AA83EC1436B88F002D78AD /* UsedTable.m in Sources */,
+				B3AA83F51436F12F002D78AD /* SvcTable.m in Sources */,
+				B39631CF14384C7800E70AA7 /* UsedCellOne.m in Sources */,
+				B39631D414385F3600E70AA7 /* UsedCellTwo.m in Sources */,
+				B39631DD1438860800E70AA7 /* ServiceTable.m in Sources */,
+				B39631E014388A2C00E70AA7 /* Service.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD4AA87C1400077A006141A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4AA87D1400077A006141A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD4AA8851400077B006141A1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4AA8861400077B006141A1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD4AA8941400077B006141A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "CBD84321-5F59-45BE-81EB-7FB5DA9349BE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBD84321-5F59-45BE-81EB-7FB5DA9349BE";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD4AA8951400077B006141A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "CBD84321-5F59-45BE-81EB-7FB5DA9349BE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBD84321-5F59-45BE-81EB-7FB5DA9349BE";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD4AA8971400077B006141A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "avtofon/avtofon-Prefix.pch";
+				INFOPLIST_FILE = "avtofon/avtofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CBD84321-5F59-45BE-81EB-7FB5DA9349BE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD4AA8981400077B006141A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "avtofon/avtofon-Prefix.pch";
+				INFOPLIST_FILE = "avtofon/avtofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CBD84321-5F59-45BE-81EB-7FB5DA9349BE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD4AA8691400077A006141A1 /* Build configuration list for PBXProject "avtofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4AA8941400077B006141A1 /* Debug */,
+				DD4AA8951400077B006141A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4AA8961400077B006141A1 /* Build configuration list for PBXNativeTarget "avtofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4AA8971400077B006141A1 /* Debug */,
+				DD4AA8981400077B006141A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD4AA8661400077A006141A1 /* Project object */;
+}
