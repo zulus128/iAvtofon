@@ -7,6 +7,7 @@
 //
 
 #import "StartController.h"
+//#import "AppDelegate.h"
 
 @implementation StartController
 
@@ -46,6 +47,20 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction) push1 {
+    
+    NSLog(@"push1");
+    
+//    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+//    delegate.tCtr.selectedIndex = 0;  //ur button tag;
+//    delegate.tCtr.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+//    [self presentModalViewController:delegate.tCtr animated:YES];
+    
+//    UIApplication *myApplication = [UIApplication sharedApplication];
+//    UIWindow *mainWindow = [myApplication keyWindow];
+//    UIViewController *rootViewController = [mainWindow rootViewController];
 }
 
 @end

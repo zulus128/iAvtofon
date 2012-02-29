@@ -10,4 +10,6 @@
 
 @interface StartController : UIViewController
 
+-(IBAction) push1;
+
 @end

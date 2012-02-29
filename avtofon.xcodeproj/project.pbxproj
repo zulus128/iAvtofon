@@ -206,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				B39631D9143885FE00E70AA7 /* ServiceTable.xib */,
+				F2E0F4C414FDF7F0001DD01F /* StartController.xib */,
 				B3AA83FB14375AF1002D78AD /* SvcTable.xib */,
 				B3AA83EF1436C1D3002D78AD /* UsedTable.xib */,
 				DD4AA8851400077B006141A1 /* MainWindow.xib */,
@@ -273,6 +274,9 @@
 				DD22632A1401CD3800CA6E6C /* Xibs */,
 				DD4AA8821400077A006141A1 /* avtofonAppDelegate.h */,
 				DD4AA8831400077A006141A1 /* avtofonAppDelegate.m */,
+				F2E0F4C214FDF7EB001DD01F /* StartController.h */,
+				F2E0F4C314FDF7EE001DD01F /* StartController.m */,
+				DDD2EEE0140328870077B459 /* Reachability.m */,
 				B39631DE14388A2A00E70AA7 /* Service.h */,
 				B39631DF14388A2A00E70AA7 /* Service.m */,
 				B39631DB1438860700E70AA7 /* ServiceTable.h */,
@@ -314,11 +318,7 @@
 				8CAD2AAD1403C6F200433B54 /* Complectation.h */,
 				8CAD2AAE1403C6F200433B54 /* Complectation.m */,
 				DDD2EEDF140328870077B459 /* Reachability.h */,
-				DDD2EEE0140328870077B459 /* Reachability.m */,
 				DD4AA87A1400077A006141A1 /* Supporting Files */,
-				F2E0F4C214FDF7EB001DD01F /* StartController.h */,
-				F2E0F4C314FDF7EE001DD01F /* StartController.m */,
-				F2E0F4C414FDF7F0001DD01F /* StartController.xib */,
 			);
 			path = avtofon;
 			sourceTree = "<group>";
