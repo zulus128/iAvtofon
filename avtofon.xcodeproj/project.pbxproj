@@ -68,6 +68,9 @@
 		DD7C957814048B9900CFE4CD /* MarkModels.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7C957614048B9900CFE4CD /* MarkModels.xib */; };
 		DDD2EEE1140328870077B459 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE0140328870077B459 /* Reachability.m */; };
 		DDD2EEE5140332E50077B459 /* Dealer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE4140332E50077B459 /* Dealer.m */; };
+		F2E0F4C014FDEDE8001DD01F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E0F4BF14FDEDE8001DD01F /* Default.png */; };
+		F2E0F4C514FDF7F1001DD01F /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0F4C314FDF7EE001DD01F /* StartController.m */; };
+		F2E0F4C614FDF7F1001DD01F /* StartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E0F4C414FDF7F0001DD01F /* StartController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +160,10 @@
 		DDD2EEE0140328870077B459 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DDD2EEE3140332E50077B459 /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
 		DDD2EEE4140332E50077B459 /* Dealer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dealer.m; sourceTree = "<group>"; };
+		F2E0F4BF14FDEDE8001DD01F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F2E0F4C214FDF7EB001DD01F /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
+		F2E0F4C314FDF7EE001DD01F /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
+		F2E0F4C414FDF7F0001DD01F /* StartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +185,7 @@
 		8CA63CDF14060B03007DCF87 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2E0F4BF14FDEDE8001DD01F /* Default.png */,
 				8CA63CE114060B19007DCF87 /* greenbox.png */,
 				8CA63CE214060B19007DCF87 /* greenbox@2x.png */,
 				DD5BF7CA140CAB290082FE12 /* 64-zap.png */,
@@ -308,6 +316,9 @@
 				DDD2EEDF140328870077B459 /* Reachability.h */,
 				DDD2EEE0140328870077B459 /* Reachability.m */,
 				DD4AA87A1400077A006141A1 /* Supporting Files */,
+				F2E0F4C214FDF7EB001DD01F /* StartController.h */,
+				F2E0F4C314FDF7EE001DD01F /* StartController.m */,
+				F2E0F4C414FDF7F0001DD01F /* StartController.xib */,
 			);
 			path = avtofon;
 			sourceTree = "<group>";
@@ -403,6 +414,8 @@
 				B39631D114385E0800E70AA7 /* UsedCellTwo.xib in Resources */,
 				B39631D8143885F100E70AA7 /* services.plist in Resources */,
 				B39631DA143885FE00E70AA7 /* ServiceTable.xib in Resources */,
+				F2E0F4C014FDEDE8001DD01F /* Default.png in Resources */,
+				F2E0F4C614FDF7F1001DD01F /* StartController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +449,7 @@
 				B39631D414385F3600E70AA7 /* UsedCellTwo.m in Sources */,
 				B39631DD1438860800E70AA7 /* ServiceTable.m in Sources */,
 				B39631E014388A2C00E70AA7 /* Service.m in Sources */,
+				F2E0F4C514FDF7F1001DD01F /* StartController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
