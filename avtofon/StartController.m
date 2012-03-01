@@ -7,7 +7,7 @@
 //
 
 #import "StartController.h"
-//#import "AppDelegate.h"
+#import "Common.h"
 
 @implementation StartController
 
@@ -48,6 +48,21 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    
+//    [super viewWillAppear:animated];
+//    [self.navigationController.navigationBar setTintColor:[UIColor greenColor]];
+//    
+//}
+
+//- (void)viewDidAppear:(BOOL)animated {
+//    
+//    [super viewDidAppear:animated];
+//    
+//    UIImage *image = [UIImage imageNamed: @"avtofon-green.png"];
+//    [self.navigationController.navigationBar setBackgroundImage:image];
+//}
 
 -(IBAction) push1 {
     

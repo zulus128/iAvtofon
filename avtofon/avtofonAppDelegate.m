@@ -19,8 +19,13 @@
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     
-    self.window.rootViewController = self.tabBarController;
+//    self.window.rootViewController = self.tabBarController;
+
 //    self.window.rootViewController = [[StartController alloc] init];
+//    [self.window makeKeyAndVisible];
+    
+    UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController: [[StartController alloc] init]];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     
 //    StartController* controller = [[StartController alloc] init];
