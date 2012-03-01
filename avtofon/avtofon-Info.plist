@@ -32,5 +32,12 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Candara.ttf</string>
+		<string>Candarab.ttf</string>
+		<string>Candarai.ttf</string>
+		<string>Candaraz.ttf</string>
+	</array>
 </dict>
 </plist>

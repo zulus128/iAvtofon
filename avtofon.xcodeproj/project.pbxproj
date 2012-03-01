@@ -80,6 +80,10 @@
 		F20AD29F14FF77A2006AA251 /* icon-zeny@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD29314FF77A2006AA251 /* icon-zeny@2x.png */; };
 		F20AD2A014FF77A2006AA251 /* orange-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD29414FF77A2006AA251 /* orange-button@2x.png */; };
 		F20AD2A114FF77A2006AA251 /* shadow_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD29514FF77A2006AA251 /* shadow_top@2x.png */; };
+		F2AA77A914FFA0CA0087A8A6 /* Candara.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2AA77A514FFA0CA0087A8A6 /* Candara.ttf */; };
+		F2AA77AA14FFA0CA0087A8A6 /* Candarab.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2AA77A614FFA0CA0087A8A6 /* Candarab.ttf */; };
+		F2AA77AB14FFA0CA0087A8A6 /* Candarai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2AA77A714FFA0CA0087A8A6 /* Candarai.ttf */; };
+		F2AA77AC14FFA0CA0087A8A6 /* Candaraz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2AA77A814FFA0CA0087A8A6 /* Candaraz.ttf */; };
 		F2E0F4C014FDEDE8001DD01F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E0F4BF14FDEDE8001DD01F /* Default.png */; };
 		F2E0F4C514FDF7F1001DD01F /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0F4C314FDF7EE001DD01F /* StartController.m */; };
 		F2E0F4C614FDF7F1001DD01F /* StartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E0F4C414FDF7F0001DD01F /* StartController.xib */; };
@@ -184,6 +188,10 @@
 		F20AD29314FF77A2006AA251 /* icon-zeny@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-zeny@2x.png"; sourceTree = "<group>"; };
 		F20AD29414FF77A2006AA251 /* orange-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange-button@2x.png"; sourceTree = "<group>"; };
 		F20AD29514FF77A2006AA251 /* shadow_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow_top@2x.png"; sourceTree = "<group>"; };
+		F2AA77A514FFA0CA0087A8A6 /* Candara.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candara.ttf; sourceTree = "<group>"; };
+		F2AA77A614FFA0CA0087A8A6 /* Candarab.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candarab.ttf; sourceTree = "<group>"; };
+		F2AA77A714FFA0CA0087A8A6 /* Candarai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candarai.ttf; sourceTree = "<group>"; };
+		F2AA77A814FFA0CA0087A8A6 /* Candaraz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candaraz.ttf; sourceTree = "<group>"; };
 		F2E0F4BF14FDEDE8001DD01F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F2E0F4C214FDF7EB001DD01F /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
 		F2E0F4C314FDF7EE001DD01F /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
@@ -351,6 +359,10 @@
 		DD4AA87A1400077A006141A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F2AA77A514FFA0CA0087A8A6 /* Candara.ttf */,
+				F2AA77A614FFA0CA0087A8A6 /* Candarab.ttf */,
+				F2AA77A714FFA0CA0087A8A6 /* Candarai.ttf */,
+				F2AA77A814FFA0CA0087A8A6 /* Candaraz.ttf */,
 				DD4AA87B1400077A006141A1 /* avtofon-Info.plist */,
 				DD4AA87C1400077A006141A1 /* InfoPlist.strings */,
 				DD4AA87F1400077A006141A1 /* main.m */,
@@ -472,6 +484,10 @@
 				F20AD29F14FF77A2006AA251 /* icon-zeny@2x.png in Resources */,
 				F20AD2A014FF77A2006AA251 /* orange-button@2x.png in Resources */,
 				F20AD2A114FF77A2006AA251 /* shadow_top@2x.png in Resources */,
+				F2AA77A914FFA0CA0087A8A6 /* Candara.ttf in Resources */,
+				F2AA77AA14FFA0CA0087A8A6 /* Candarab.ttf in Resources */,
+				F2AA77AB14FFA0CA0087A8A6 /* Candarai.ttf in Resources */,
+				F2AA77AC14FFA0CA0087A8A6 /* Candaraz.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
