@@ -34,6 +34,52 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UIFont* ffont = [UIFont fontWithName:@"Candara-Bold" size:18];
+    
+    
+    UILabel *lab1 = [[UILabel alloc] initWithFrame:CGRectMake(17, 105, 80, 20)];
+    lab1.text = @"Дилеры";
+    lab1.font = ffont;
+    lab1.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
+    [self.view addSubview:lab1];
+    [lab1 release];
+    
+    UILabel *lab2 = [[UILabel alloc] initWithFrame:CGRectMake(140, 105, 60, 20)];
+    lab2.text = @"Цены";
+    lab2.font = ffont;
+    lab2.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
+    [self.view addSubview:lab2];
+    [lab2 release];
+    
+    UILabel *lab3 = [[UILabel alloc] initWithFrame:CGRectMake(240, 105, 90, 20)];
+    lab3.text = @"Остатки";
+    lab3.font = ffont;
+    lab3.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
+    [self.view addSubview:lab3];
+    [lab3 release];
+
+    UILabel *lab4 = [[UILabel alloc] initWithFrame:CGRectMake(17, 205, 80, 20)];
+    lab4.text = @"С пробегом";
+    lab4.font = ffont;
+    lab4.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
+    [self.view addSubview:lab4];
+    [lab4 release];
+    
+    UILabel *lab5 = [[UILabel alloc] initWithFrame:CGRectMake(140, 205, 60, 20)];
+    lab5.text = @"Сервис";
+    lab5.font = ffont;
+    lab5.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
+    [self.view addSubview:lab5];
+    [lab5 release];
+    
+    UILabel *lab6 = [[UILabel alloc] initWithFrame:CGRectMake(240, 205, 90, 20)];
+    lab6.text = @"Услуги";
+    lab6.font = ffont;
+    lab6.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
+    [self.view addSubview:lab6];
+    [lab6 release];
+
 }
 
 - (void)viewDidUnload
