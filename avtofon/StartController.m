@@ -8,6 +8,7 @@
 
 #import "StartController.h"
 #import "Common.h"
+#import "HowtoController.h"
 
 @implementation StartController
 
@@ -59,21 +60,21 @@
     [self.view addSubview:lab3];
     [lab3 release];
 
-    UILabel *lab4 = [[UILabel alloc] initWithFrame:CGRectMake(17, 205, 80, 20)];
+    UILabel *lab4 = [[UILabel alloc] initWithFrame:CGRectMake(2, 215, 100, 20)];
     lab4.text = @"С пробегом";
     lab4.font = ffont;
     lab4.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
     [self.view addSubview:lab4];
     [lab4 release];
     
-    UILabel *lab5 = [[UILabel alloc] initWithFrame:CGRectMake(140, 205, 60, 20)];
+    UILabel *lab5 = [[UILabel alloc] initWithFrame:CGRectMake(132, 215, 60, 20)];
     lab5.text = @"Сервис";
     lab5.font = ffont;
     lab5.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
     [self.view addSubview:lab5];
     [lab5 release];
     
-    UILabel *lab6 = [[UILabel alloc] initWithFrame:CGRectMake(240, 205, 90, 20)];
+    UILabel *lab6 = [[UILabel alloc] initWithFrame:CGRectMake(248, 215, 60, 20)];
     lab6.text = @"Услуги";
     lab6.font = ffont;
     lab6.textColor = [UIColor colorWithRed:134.0/255.0 green:128.0/255.0 blue:188.0/255.0 alpha:1.0];
@@ -95,12 +96,19 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-//- (void)viewWillAppear:(BOOL)animated {
-//    
-//    [super viewWillAppear:animated];
-//    [self.navigationController.navigationBar setTintColor:[UIColor greenColor]];
-//    
-//}
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:63.0/255.0 green:166.0/255.0 blue:89.0/255.0 alpha:1.0]];
+//    [self.navigationController.navigationBar setOpaque:NO];
+    
+    UIImage *image = [UIImage imageNamed: @"avtofon@2x.png"];
+    UIImageView* iv = [[UIImageView alloc]initWithImage:image];
+    iv.frame = CGRectMake(100,8,117,29);
+    [self.navigationController.navigationBar addSubview:iv];
+//    [self sendSubviewToBack:[Common instance].aTabBarBackground];
+    
+}
 
 //- (void)viewDidAppear:(BOOL)animated {
 //    
@@ -122,6 +130,12 @@
 //    UIApplication *myApplication = [UIApplication sharedApplication];
 //    UIWindow *mainWindow = [myApplication keyWindow];
 //    UIViewController *rootViewController = [mainWindow rootViewController];
+}
+
+-(IBAction) pushBottom {
+    
+    [self.navigationController pushViewController:[[[HowtoController alloc]init]autorelease] animated:YES];
+
 }
 
 @end

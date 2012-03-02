@@ -11,5 +11,6 @@
 @interface StartController : UIViewController
 
 -(IBAction) push1;
+-(IBAction) pushBottom;
 
 @end

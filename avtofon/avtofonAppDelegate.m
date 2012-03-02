@@ -24,7 +24,7 @@
 //    self.window.rootViewController = [[StartController alloc] init];
 //    [self.window makeKeyAndVisible];
     
-    UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController: [[StartController alloc] init]];
+    UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController: [[[StartController alloc] init]autorelease]];
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     
