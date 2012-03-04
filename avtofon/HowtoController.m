@@ -48,4 +48,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction) pushDealer {
+    
+    NSLog(@"pushDealer");
+}
+
 @end

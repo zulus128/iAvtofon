@@ -12,5 +12,6 @@
 
 -(IBAction) push1;
 -(IBAction) pushBottom;
+-(IBAction) pushDealer;
 
 @end

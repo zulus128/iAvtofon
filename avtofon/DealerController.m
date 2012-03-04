@@ -1,23 +1,23 @@
 //
-//  DealerTable.m
+//  DealerController.m
 //  avtofon
 //
-//  Created by вадим on 8/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by вадим on 3/4/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "DealerTable.h"
+#import "DealerController.h"
 #import "Common.h"
 #import "Reachability.h"
 #import "XMLParser.h"
-#import "Mark.h"
-#import "MarkDealers.h"
 
-@implementation DealerTable
+@implementation DealerController
 
-- (id)initWithStyle:(UITableViewStyle)style
+@synthesize tableView;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
@@ -34,15 +34,18 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad {
-    
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    
+//    [self refresh:NO];
+}
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    // Do any additional setup after loading the view from its nib.
     
     [self refresh:NO];
 }
@@ -54,33 +57,17 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-//- (void)viewDidAppear:(BOOL)animated {
-//    
-//    [super viewDidAppear:animated];
-//    
-//    UIImage *image = [UIImage imageNamed: @"avtofon-green.png"];
-//    [self.navigationController.navigationBar setBackgroundImage:image];
-//}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)dealloc {
+    
+    self.tableView = nil;
+    
+    [super dealloc];
 }
 
 #pragma mark - Table view data source
@@ -99,75 +86,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"DealerCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-        
+    
     // Configure the cell...
     Mark* mark = [[Common instance]getMarkWsDealerAt:indexPath.row];
     cell.textLabel.text = mark.title;
-    cell.imageView.image = [[Common instance] getImage:mark.image];
-
+//    cell.imageView.image = [[Common instance] getImage:mark.image];
+    
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    MarkDealers *detailViewController = [[MarkDealers alloc] initWithNibName:@"MarkDealers" bundle:nil];
-     
-    Mark* mrk = [[Common instance]getMarkWsDealerAt:indexPath.row];
-    detailViewController.mark = mrk;
-    
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-     
-}
-
 
 - (void)refresh: (BOOL)hand {
     
@@ -189,12 +121,12 @@
         
         [self addPreloadedDealers];
         
-/*        Item* item = [[Common instance] getsAt:0];
-        self.topcell.title.text = item.title;
-        self.topcell.rubric.text = item.rubric;
-        self.topcell.image.image = [Common loadImage];
-        [Common instance].img = self.topcell.image.image;
-  */      
+        /*        Item* item = [[Common instance] getsAt:0];
+         self.topcell.title.text = item.title;
+         self.topcell.rubric.text = item.rubric;
+         self.topcell.image.image = [Common loadImage];
+         [Common instance].img = self.topcell.image.image;
+         */      
         [self.tableView reloadData];
 		
 	}else {
@@ -204,12 +136,12 @@
             
             [self addPreloadedDealers];
             
-           /* Item* item = [[Common instance] getNewsAt:0];
-            self.topcell.title.text = item.title;
-            self.topcell.rubric.text = item.rubric;
-            self.topcell.image.image = [Common loadImage];
-            [Common instance].img = self.topcell.image.image;
-            */
+            /* Item* item = [[Common instance] getNewsAt:0];
+             self.topcell.title.text = item.title;
+             self.topcell.rubric.text = item.rubric;
+             self.topcell.image.image = [Common loadImage];
+             [Common instance].img = self.topcell.image.image;
+             */
             [self.tableView reloadData];
             hand = NO;
             
@@ -218,34 +150,34 @@
             
             [self.tableView reloadData];
             [[Common instance] saveDealersPreload];
-                
+            
             if([[Common instance] getMarkWsDealersCount]) {
-                    
-              /*      
-                Item* item = [[Common instance] getNewsAt:0];
-                    self.topcell.title.text = item.title;
-                    self.topcell.rubric.text = item.rubric;
-                    self.topcell.image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: item.image]]];
-                    [Common instance].img = self.topcell.image.image;
-                    
-                    [Common saveImage:self.topcell.image.image];
-               */
+                
+                /*      
+                 Item* item = [[Common instance] getNewsAt:0];
+                 self.topcell.title.text = item.title;
+                 self.topcell.rubric.text = item.rubric;
+                 self.topcell.image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: item.image]]];
+                 [Common instance].img = self.topcell.image.image;
+                 
+                 [Common saveImage:self.topcell.image.image];
+                 */
             }
         }
     }
-        
-            
+    
+    
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
 }
 
 - (void) addPreloadedDealers {
     
- //   [[Common instance] clearNews];
- //   [[Common instance] clearQAs];
- //   [[Common instance] clearPodcasts];
+    //   [[Common instance] clearNews];
+    //   [[Common instance] clearQAs];
+    //   [[Common instance] clearPodcasts];
     
- //   [[Common instance] loadPreloaded];
+    //   [[Common instance] loadPreloaded];
 }
 
 

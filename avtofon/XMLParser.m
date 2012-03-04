@@ -178,7 +178,7 @@ enum type {
                         if([elementName isEqualToString:IMAGE_TAG]) {
                             
                             NSString* nm = [trimedStr lastPathComponent];
-                            [[Common instance] saveImage:trimedStr name:nm];
+//                            [[Common instance] saveImage:trimedStr name:nm];
                             switch(currtype) {
                                     
                                 case EN_MARK:

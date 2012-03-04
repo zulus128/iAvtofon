@@ -10,4 +10,6 @@
 
 @interface HowtoController : UIViewController
 
+-(IBAction) pushDealer;
+
 @end

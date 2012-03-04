@@ -9,6 +9,7 @@
 #import "StartController.h"
 #import "Common.h"
 #import "HowtoController.h"
+#import "DealerController.h"
 
 @implementation StartController
 
@@ -136,6 +137,12 @@
     
     [self.navigationController pushViewController:[[[HowtoController alloc]init]autorelease] animated:YES];
 
+}
+
+-(IBAction) pushDealer {
+    
+    NSLog(@"pushDealer");
+    [self.navigationController pushViewController:[[[DealerController alloc]init]autorelease] animated:YES];
 }
 
 @end

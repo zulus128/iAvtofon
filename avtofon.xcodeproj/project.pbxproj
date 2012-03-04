@@ -66,6 +66,8 @@
 		DD5BF7D5140CAB290082FE12 /* 172-pricetag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5BF7CF140CAB290082FE12 /* 172-pricetag@2x.png */; };
 		DD7C957714048B9900CFE4CD /* MarkModels.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C957514048B9900CFE4CD /* MarkModels.m */; };
 		DD7C957814048B9900CFE4CD /* MarkModels.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7C957614048B9900CFE4CD /* MarkModels.xib */; };
+		DDB0E749150318690031A95A /* DealerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0E747150318680031A95A /* DealerController.m */; };
+		DDB0E74A150318690031A95A /* DealerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB0E748150318690031A95A /* DealerController.xib */; };
 		DDD2EEE1140328870077B459 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE0140328870077B459 /* Reachability.m */; };
 		DDD2EEE5140332E50077B459 /* Dealer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE4140332E50077B459 /* Dealer.m */; };
 		F20AD29614FF77A2006AA251 /* avtofon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD28A14FF77A2006AA251 /* avtofon@2x.png */; };
@@ -184,6 +186,9 @@
 		DD7C957414048B9900CFE4CD /* MarkModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkModels.h; sourceTree = "<group>"; };
 		DD7C957514048B9900CFE4CD /* MarkModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkModels.m; sourceTree = "<group>"; };
 		DD7C957614048B9900CFE4CD /* MarkModels.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkModels.xib; sourceTree = "<group>"; };
+		DDB0E746150318680031A95A /* DealerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealerController.h; sourceTree = "<group>"; };
+		DDB0E747150318680031A95A /* DealerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealerController.m; sourceTree = "<group>"; };
+		DDB0E748150318690031A95A /* DealerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealerController.xib; sourceTree = "<group>"; };
 		DDD2EEDF140328870077B459 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DDD2EEE0140328870077B459 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DDD2EEE3140332E50077B459 /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
@@ -263,9 +268,10 @@
 		DD22632A1401CD3800CA6E6C /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				B39631D9143885FE00E70AA7 /* ServiceTable.xib */,
 				F2E0F4C414FDF7F0001DD01F /* StartController.xib */,
 				F2D480D51500E761009FDE28 /* HowtoController.xib */,
+				DDB0E748150318690031A95A /* DealerController.xib */,
+				B39631D9143885FE00E70AA7 /* ServiceTable.xib */,
 				B3AA83FB14375AF1002D78AD /* SvcTable.xib */,
 				B3AA83EF1436C1D3002D78AD /* UsedTable.xib */,
 				DD4AA8851400077B006141A1 /* MainWindow.xib */,
@@ -337,6 +343,8 @@
 				F2E0F4C314FDF7EE001DD01F /* StartController.m */,
 				F2D480D31500E75B009FDE28 /* HowtoController.h */,
 				F2D480D41500E760009FDE28 /* HowtoController.m */,
+				DDB0E746150318680031A95A /* DealerController.h */,
+				DDB0E747150318680031A95A /* DealerController.m */,
 				DDD2EEE0140328870077B459 /* Reachability.m */,
 				B39631DE14388A2A00E70AA7 /* Service.h */,
 				B39631DF14388A2A00E70AA7 /* Service.m */,
@@ -537,6 +545,7 @@
 				F2D480E91500EAF4009FDE28 /* 5.png in Resources */,
 				F2D480EA1500EAF4009FDE28 /* 6.png in Resources */,
 				F2D480EB1500EAF4009FDE28 /* bottom_menu_back@2x.jpg in Resources */,
+				DDB0E74A150318690031A95A /* DealerController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +581,7 @@
 				B39631E014388A2C00E70AA7 /* Service.m in Sources */,
 				F2E0F4C514FDF7F1001DD01F /* StartController.m in Sources */,
 				F2D480D61500E762009FDE28 /* HowtoController.m in Sources */,
+				DDB0E749150318690031A95A /* DealerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
