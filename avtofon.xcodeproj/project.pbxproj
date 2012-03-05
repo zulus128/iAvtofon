@@ -70,6 +70,8 @@
 		DDB0E74A150318690031A95A /* DealerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB0E748150318690031A95A /* DealerController.xib */; };
 		DDD2EEE1140328870077B459 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE0140328870077B459 /* Reachability.m */; };
 		DDD2EEE5140332E50077B459 /* Dealer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD2EEE4140332E50077B459 /* Dealer.m */; };
+		DDEF89F91504470800F1160B /* CommonDealerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF89F81504470800F1160B /* CommonDealerCell.m */; };
+		DDEF89FC150447B200F1160B /* CommonDealerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEF89FB150447B200F1160B /* CommonDealerCell.xib */; };
 		F20AD29614FF77A2006AA251 /* avtofon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD28A14FF77A2006AA251 /* avtofon@2x.png */; };
 		F20AD29714FF77A2006AA251 /* bottom-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD28B14FF77A2006AA251 /* bottom-back@2x.png */; };
 		F20AD29814FF77A2006AA251 /* bottom-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AD28C14FF77A2006AA251 /* bottom-button@2x.png */; };
@@ -193,6 +195,9 @@
 		DDD2EEE0140328870077B459 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DDD2EEE3140332E50077B459 /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
 		DDD2EEE4140332E50077B459 /* Dealer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dealer.m; sourceTree = "<group>"; };
+		DDEF89F71504470800F1160B /* CommonDealerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDealerCell.h; sourceTree = "<group>"; };
+		DDEF89F81504470800F1160B /* CommonDealerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDealerCell.m; sourceTree = "<group>"; };
+		DDEF89FB150447B200F1160B /* CommonDealerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonDealerCell.xib; sourceTree = "<group>"; };
 		F20AD28A14FF77A2006AA251 /* avtofon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avtofon@2x.png"; sourceTree = "<group>"; };
 		F20AD28B14FF77A2006AA251 /* bottom-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-back@2x.png"; sourceTree = "<group>"; };
 		F20AD28C14FF77A2006AA251 /* bottom-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-button@2x.png"; sourceTree = "<group>"; };
@@ -271,6 +276,7 @@
 				F2E0F4C414FDF7F0001DD01F /* StartController.xib */,
 				F2D480D51500E761009FDE28 /* HowtoController.xib */,
 				DDB0E748150318690031A95A /* DealerController.xib */,
+				DDEF89FB150447B200F1160B /* CommonDealerCell.xib */,
 				B39631D9143885FE00E70AA7 /* ServiceTable.xib */,
 				B3AA83FB14375AF1002D78AD /* SvcTable.xib */,
 				B3AA83EF1436C1D3002D78AD /* UsedTable.xib */,
@@ -345,6 +351,8 @@
 				F2D480D41500E760009FDE28 /* HowtoController.m */,
 				DDB0E746150318680031A95A /* DealerController.h */,
 				DDB0E747150318680031A95A /* DealerController.m */,
+				DDEF89F71504470800F1160B /* CommonDealerCell.h */,
+				DDEF89F81504470800F1160B /* CommonDealerCell.m */,
 				DDD2EEE0140328870077B459 /* Reachability.m */,
 				B39631DE14388A2A00E70AA7 /* Service.h */,
 				B39631DF14388A2A00E70AA7 /* Service.m */,
@@ -546,6 +554,7 @@
 				F2D480EA1500EAF4009FDE28 /* 6.png in Resources */,
 				F2D480EB1500EAF4009FDE28 /* bottom_menu_back@2x.jpg in Resources */,
 				DDB0E74A150318690031A95A /* DealerController.xib in Resources */,
+				DDEF89FC150447B200F1160B /* CommonDealerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +591,7 @@
 				F2E0F4C514FDF7F1001DD01F /* StartController.m in Sources */,
 				F2D480D61500E762009FDE28 /* HowtoController.m in Sources */,
 				DDB0E749150318690031A95A /* DealerController.m in Sources */,
+				DDEF89F91504470800F1160B /* CommonDealerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

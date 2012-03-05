@@ -14,6 +14,6 @@
 - (void)addPreloadedDealers;
 - (BOOL)addDealers: (NSString*) url;
 
-@property (nonatomic, retain) IBOutlet UITableView* tableView;
+@property (nonatomic, retain) IBOutlet UITableView* tabView;
 
 @end

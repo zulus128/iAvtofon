@@ -10,10 +10,11 @@
 #import "Common.h"
 #import "Reachability.h"
 #import "XMLParser.h"
+#import "CommonDealerCell.h"
 
 @implementation DealerController
 
-@synthesize tableView;
+@synthesize tabView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,7 +66,7 @@
 
 - (void)dealloc {
     
-    self.tableView = nil;
+    self.tabView = nil;
     
     [super dealloc];
 }
@@ -86,12 +87,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"DealerCell";
+    static NSString *CellIdentifier = @"CommonDealerCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    UITableViewCell *cell = [tableView1 dequeueReusableCellWithIdentifier:CellIdentifier];
+//    if (cell == nil) {
+//        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+//    }
+    
+    CommonDealerCell* cell = (CommonDealerCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CommonDealerCell" owner:nil options:nil];
+        cell = [topLevelObjects objectAtIndex:0];
     }
+    
+    [[cell lab1] setText:@"leftlabel"];
+    [[cell lab2] setText:@"rightlabel"]; 
     
     // Configure the cell...
     Mark* mark = [[Common instance]getMarkWsDealerAt:indexPath.row];
@@ -127,7 +138,7 @@
          self.topcell.image.image = [Common loadImage];
          [Common instance].img = self.topcell.image.image;
          */      
-        [self.tableView reloadData];
+        [self.tabView reloadData];
 		
 	}else {
         
@@ -142,13 +153,13 @@
              self.topcell.image.image = [Common loadImage];
              [Common instance].img = self.topcell.image.image;
              */
-            [self.tableView reloadData];
+            [self.tabView reloadData];
             hand = NO;
             
         }
         else {
             
-            [self.tableView reloadData];
+            [self.tabView reloadData];
             [[Common instance] saveDealersPreload];
             
             if([[Common instance] getMarkWsDealersCount]) {
