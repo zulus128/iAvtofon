@@ -105,7 +105,7 @@
     
     UIImage *image = [UIImage imageNamed: @"avtofon@2x.png"];
     UIImageView* iv = [[UIImageView alloc]initWithImage:image];
-    iv.frame = CGRectMake(100,8,117,29);
+    iv.frame = CGRectMake(100,7,115,33);
     [self.navigationController.navigationBar addSubview:iv];
 //    [self sendSubviewToBack:[Common instance].aTabBarBackground];
     

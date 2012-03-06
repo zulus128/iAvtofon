@@ -41,6 +41,17 @@
     // Do any additional setup after loading the view from its nib.
     
 //    [self refresh:NO];
+    
+    UIFont* ffont = [UIFont fontWithName:@"Candara-Bold" size:22];
+    
+    
+    UILabel *lab1 = [[UILabel alloc] initWithFrame:CGRectMake(20/*103*/, 20, 120, 25)];
+    lab1.backgroundColor = [UIColor clearColor];
+    lab1.text = @"Все дилеры";
+    lab1.font = ffont;
+    lab1.textColor = [UIColor whiteColor];
+    [self.view addSubview:lab1];
+    [lab1 release];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -101,12 +112,14 @@
         cell = [topLevelObjects objectAtIndex:0];
     }
     
-    [[cell lab1] setText:@"leftlabel"];
-    [[cell lab2] setText:@"rightlabel"]; 
-    
+        
     // Configure the cell...
+    
     Mark* mark = [[Common instance]getMarkWsDealerAt:indexPath.row];
-    cell.textLabel.text = mark.title;
+    [[cell lab1] setText:mark.title];
+    [[cell lab2] setText:]; 
+
+//    cell.textLabel.text = mark.title;
 //    cell.imageView.image = [[Common instance] getImage:mark.image];
     
     return cell;
