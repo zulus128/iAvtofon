@@ -115,9 +115,12 @@
         
     // Configure the cell...
     
+    UIFont* ffont = [UIFont fontWithName:@"Candara-Bold" size:20];
     Mark* mark = [[Common instance]getMarkWsDealerAt:indexPath.row];
+    [[cell lab1] setFont:ffont];
+    [[cell lab2] setFont:ffont];
     [[cell lab1] setText:mark.title];
-    [[cell lab2] setText:]; 
+    [[cell lab2] setText:[NSString stringWithFormat:@"%d", mark.dealers.count]]; 
 
 //    cell.textLabel.text = mark.title;
 //    cell.imageView.image = [[Common instance] getImage:mark.image];

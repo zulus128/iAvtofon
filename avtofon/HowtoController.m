@@ -7,6 +7,7 @@
 //
 
 #import "HowtoController.h"
+#import "DealerController.h"
 
 @implementation HowtoController
 
@@ -51,6 +52,7 @@
 -(IBAction) pushDealer {
     
     NSLog(@"pushDealer");
+    [self.navigationController pushViewController:[[[DealerController alloc]init]autorelease] animated:YES];
 }
 
 @end
